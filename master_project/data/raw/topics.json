@@ -1,0 +1,209 @@
+{
+    "Political Leaders and Information Transparency": {
+        "keywords": [
+            "information transparency",
+            "government transparency",
+            "political accountability",
+            "media manipulation",
+            "fake news",
+            "whistleblowing",
+            "government secrecy",
+            "public records access",
+            "freedom of information",
+            "media censorship"
+        ],
+        "people_uris": [],
+        "orgs_uris": [
+            "http://en.wikipedia.org/wiki/CNN",
+            "http://en.wikipedia.org/wiki/Fox_News",
+            "http://en.wikipedia.org/wiki/The_New_York_Times",
+            "http://en.wikipedia.org/wiki/The_Washington_Post",
+            "http://en.wikipedia.org/wiki/NBC_News",
+            "http://en.wikipedia.org/wiki/ABC_News",
+            "http://en.wikipedia.org/wiki/CBS_News",
+            "http://en.wikipedia.org/wiki/Bloomberg_L.P.",
+            "http://en.wikipedia.org/wiki/MSNBC",
+            "http://en.wikipedia.org/wiki/USA_Today",
+            "http://en.wikipedia.org/wiki/The_Wall_Street_Journal",
+            "http://en.wikipedia.org/wiki/Los_Angeles_Times",
+            "http://en.wikipedia.org/wiki/Reuters",
+            "http://en.wikipedia.org/wiki/Associated_Press",
+            "http://en.wikipedia.org/wiki/Wikileaks",
+            "http://en.wikipedia.org/wiki/Transparency_International"
+        ],
+        "source_location_uri": [
+            "http://en.wikipedia.org/wiki/United_States"
+        ]
+    },
+    "US Involvement in the War in Ukraine": {
+        "keywords": [
+            "US involvement in Ukraine",
+            "US military aid to Ukraine",
+            "Ukraine conflict",
+            "Ukraine crisis",
+            "Russian invasion of Ukraine",
+            "US foreign policy in Ukraine",
+            "NATO and Ukraine",
+            "US sanctions on Russia",
+            "US-Ukraine relations"
+        ],
+        "people_uris": [],
+        "orgs_uris": [
+            "http://en.wikipedia.org/wiki/United_States_Department_of_Defense",
+            "http://en.wikipedia.org/wiki/NATO",
+            "http://en.wikipedia.org/wiki/United_States_Department_of_State",
+            "http://en.wikipedia.org/wiki/The_Pentagon",
+            "http://en.wikipedia.org/wiki/United_States_Congress",
+            "http://en.wikipedia.org/wiki/United_States_Army",
+            "http://en.wikipedia.org/wiki/European_Union",
+            "http://en.wikipedia.org/wiki/White_House",
+            "http://en.wikipedia.org/wiki/Central_Intelligence_Agency",
+            "http://en.wikipedia.org/wiki/United_Nations",
+            "http://en.wikipedia.org/wiki/Ukrainian_Armed_Forces",
+            "http://en.wikipedia.org/wiki/Government_of_Ukraine",
+            "http://en.wikipedia.org/wiki/Government_of_Russia"
+        ],
+        "source_location_uri": [
+            "http://en.wikipedia.org/wiki/United_States"
+        ]
+    },
+    "Situation of Ukrainian Refugees in the US": {
+        "keywords": [
+            "Ukrainian refugees in US",
+            "Ukrainian immigrants in US",
+            "Ukrainian asylum seekers in US",
+            "Ukrainian immigration issues",
+            "Ukrainian refugee integration",
+            "public opinion on Ukrainian refugees",
+            "economic impact of Ukrainian refugees",
+            "social impact of Ukrainian refugees",
+            "Ukrainian refugees and US policy"
+        ],
+        "people_uris": [],
+        "orgs_uris": [
+            "http://en.wikipedia.org/wiki/United_States_Department_of_Homeland_Security",
+            "http://en.wikipedia.org/wiki/International_Rescue_Committee",
+            "http://en.wikipedia.org/wiki/American_Civil_Liberties_Union",
+            "http://en.wikipedia.org/wiki/Fair_Immigration_Reform_Movement",
+            "http://en.wikipedia.org/wiki/National_Immigration_Law_Center",
+            "http://en.wikipedia.org/wiki/Center_for_Immigration_Studies",
+            "http://en.wikipedia.org/wiki/Federation_for_American_Immigration_Reform"
+        ],
+        "source_location_uri": [
+            "http://en.wikipedia.org/wiki/United_States",
+            "http://en.wikipedia.org/wiki/New_York_City",
+            "http://en.wikipedia.org/wiki/Washington,_D.C.",
+            "http://en.wikipedia.org/wiki/Los_Angeles"
+        ]
+    },
+    "Situation of Non-Ukrainian Refugees in the US": {
+        "keywords": [
+            "non-Ukrainian refugees in US",
+            "immigrants in US",
+            "US border control",
+            "illegal immigration in US",
+            "US detention centers",
+            "undocumented immigrants in US",
+            "US deportation policies",
+            "ICE raids",
+            "migrant protection protocols",
+            "visa overstays in US",
+            "immigrant success stories in US"
+        ],
+        "people_uris": [],
+        "orgs_uris": [
+            "http://en.wikipedia.org/wiki/United_States_Citizenship_and_Immigration_Services",
+            "http://en.wikipedia.org/wiki/Refugees_International",
+            "http://en.wikipedia.org/wiki/International_Rescue_Committee",
+            "http://en.wikipedia.org/wiki/United_Nations_High_Commissioner_for_Refugees",
+            "http://en.wikipedia.org/wiki/American_Red_Cross",
+            "http://en.wikipedia.org/wiki/United_States_Department_of_Homeland_Security"
+        ],
+        "source_location_uri": [
+            "http://en.wikipedia.org/wiki/United_States"
+        ]
+    },
+    "Foreigners and Crime": {
+        "keywords": [
+            "illegal immigrants and crime",
+            "non-citizens and crime rates",
+            "immigration and criminal activity",
+            "law enforcement and immigrants",
+            "human trafficking by immigrants",
+            "drug trafficking by immigrants",
+            "gang activity and immigrants",
+            "crime statistics and immigrants",
+            "deportations for criminal activity",
+            "immigration and crime in US"
+        ],
+        "people_uris": [],
+        "orgs_uris": [
+            "http://en.wikipedia.org/wiki/United_States_Department_of_Justice",
+            "http://en.wikipedia.org/wiki/Federal_Bureau_of_Investigation",
+            "http://en.wikipedia.org/wiki/United_States_Immigration_and_Customs_Enforcement",
+            "http://en.wikipedia.org/wiki/American_Civil_Liberties_Union",
+            "http://en.wikipedia.org/wiki/National_Institute_of_Justice",
+            "http://en.wikipedia.org/wiki/United_States_Department_of_Homeland_Security"
+        ],
+        "source_location_uri": [
+            "http://en.wikipedia.org/wiki/United_States"
+        ]
+    },
+    "Foreigners and Job Competition": {
+        "keywords": [
+            "foreign workers in US",
+            "immigrant workers and job market",
+            "job competition with immigrants",
+            "employment and immigration in US",
+            "impact of immigration on job market",
+            "workforce immigration in US",
+            "job market and immigrant labor",
+            "economic impact of immigration on jobs",
+            "job displacement by immigrants",
+            "unemployment and immigration in US"
+        ],
+        "people_uris": [],
+        "orgs_uris": [
+            "http://en.wikipedia.org/wiki/United_States_Department_of_Labor",
+            "http://en.wikipedia.org/wiki/United_States_Chamber_of_Commerce",
+            "http://en.wikipedia.org/wiki/AFL-CIO",
+            "http://en.wikipedia.org/wiki/National_Immigration_Forum",
+            "http://en.wikipedia.org/wiki/Economic_Policy_Institute",
+            "http://en.wikipedia.org/wiki/Center_for_Immigration_Studies"
+        ],
+        "source_location_uri": [
+            "http://en.wikipedia.org/wiki/United_States"
+        ]
+    },
+    "US Welfare System and Foreigners": {
+        "keywords": [
+            "Medicare",
+            "entitlement programs",
+            "healthcare for immigrants",
+            "immigration and welfare in US",
+            "taxpayer burden",
+            "subsidized healthcare for immigrants",
+            "immigration",
+            "immigrants",
+            "illegals",
+            "without medical insurance",
+            "subsidized housing for immigrants",
+            "migrant assistance programs",
+            "strain on welfare system from immigration",
+            "cost of immigration on social programs",
+            "social program overload from immigration"
+        ],
+        "people_uris": [],
+        "orgs_uris": [
+            "http://en.wikipedia.org/wiki/United_States_Department_of_Health_and_Human_Services",
+            "http://en.wikipedia.org/wiki/Social_Security_Administration",
+            "http://en.wikipedia.org/wiki/Center_on_Budget_and_Policy_Priorities",
+            "http://en.wikipedia.org/wiki/National_Immigration_Law_Center",
+            "http://en.wikipedia.org/wiki/American_Public_Human_Services_Association",
+            "http://en.wikipedia.org/wiki/Brookings_Institution"
+        ],
+        "source_location_uri": [
+            "http://en.wikipedia.org/wiki/United_States"
+        ]
+    }
+}

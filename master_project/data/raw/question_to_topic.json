@@ -1,0 +1,21 @@
+{
+    "question_to_topic": {
+        "I feel very angry when I think about the current situation.": "Political Leaders and Information Transparency",
+        "I feel like I am treated fairly by politicians.": "Political Leaders and Information Transparency",
+        "The energy crisis is worsening my situation.": "US Involvement in the War in Ukraine",
+        "I feel like our political leaders don't give me enough information.": "Political Leaders and Information Transparency",
+        "To what degree does this concern you: The fact that the US is getting more deeply involved in the war in Ukraine": "US Involvement in the War in Ukraine",
+        "To what degree does this concern you: The situation of Ukrainian refugees in the US": "Situation of Ukrainian Refugees in the US",
+        "To what degree does this concern you: The situation of non-Ukrainian refugees in the US": "Situation of Non-Ukrainian Refugees in the US",
+        "To what degree does this concern you: Russia using nuclear weapons": "US Involvement in the War in Ukraine",
+        "To what degree does this concern you: The state of the US healthcare system": "US Welfare System and Foreigners",
+        "Agree or disagree: In the US, you can express your opinion publicly without fear of hostility": "Political Leaders and Information Transparency",
+        "Agree or disagree: We can continue to accept refugees from Ukraine in the US": "Situation of Ukrainian Refugees in the US",
+        "Agree or disagree: We no longer have room in the US for refugees from countries other than Ukraine": "Situation of Non-Ukrainian Refugees in the US",
+        "Agree or disagree: Foreigners exacerbate crime problems": "Foreigners and Crime",
+        "Agree or disagree: Foreigners are taking jobs away from Americans": "Foreigners and Job Competition",
+        "Agree or disagree: The welfare system in the US can handle foreigners": "US Welfare System and Foreigners",
+        "How good is the following party? Democratic party": "Political Leaders and Information Transparency",
+        "How good is the following party? Republican party": "Political Leaders and Information Transparency"
+    }
+}
