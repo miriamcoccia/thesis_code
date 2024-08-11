@@ -7,7 +7,7 @@ class CustomOutputParser:
         self.target_keys = {
             'relevance': ['Relevance', 'Rel', 'Importance'],
             'sentiment': ['Sentiment', 'Feelings', 'Opinion'],
-            'agreement': ['Agreement', 'Consensus', 'Alignment', "Agree", "Disagree", "Disagreement"],
+            'agreement': ['Agreement', 'Consensus', 'Alignment', 'Agree', 'Disagree', 'Disagreement'],
             'twitter_post': ['Twitter Post', 'Tweet', 'Social Post', 'Message', 'TwitterPost']
         }
 
@@ -48,58 +48,41 @@ class CustomOutputParser:
     def extract_sections(self, text: str) -> dict:
         sections = {}
         current_section = None
-        section_header_pattern = re.compile(r"^\s*\*\*(.*?)\*\*$")
-        inline_section_pattern = re.compile(r"^\s*\*\*(.*?)\*\* (.*)$")
-        kv_pattern = re.compile(r"^\s*[*-]\s*([\w\s]+):\s*(.+)$")
-        simple_kv_pattern = re.compile(r"^\s*([\w\s]+):\s*(.+)$")
-
         twitter_post_start = False
         twitter_post_content = []
 
-        for line in text.split('\n'):
-            # Match inline sections
-            inline_match = inline_section_pattern.match(line)
-            kv_match = kv_pattern.match(line)
-            simple_kv_match = simple_kv_pattern.match(line)
+        section_patterns = [
+            re.compile(r"^\s*[*-]+\s*([A-Za-z\s]+):\s*(.*)$"),  # * Key: Value or - Key: Value
+            re.compile(r"^\s*\d+\.\s*([A-Za-z\s]+):\s*(.*)$"),  # 1. Key: Value
+            re.compile(r"^\s*([A-Za-z\s]+):\s*(.*)$"),  # Key: Value
+            re.compile(r"^\s*\*\*+\s*([A-Za-z\s]+)\s*\*\*+\s*:\s*(.*)$"),  # **Key**: Value
+        ]
 
-            if inline_match:
-                current_section = inline_match.group(1).strip()
-                sections[current_section] = inline_match.group(2).strip()
-                current_section = None
-            elif kv_match:
-                key = kv_match.group(1).strip()
-                value = kv_match.group(2).strip()
-                sections[key] = value
-            elif simple_kv_match:
-                key = simple_kv_match.group(1).strip()
-                value = simple_kv_match.group(2).strip()
-                sections[key] = value
-            else:
-                header_match = section_header_pattern.match(line)
-                if header_match:
-                    current_section = header_match.group(1).strip()
-                    sections[current_section] = ""
-                elif current_section:
-                    sections[current_section] += line + "\n"
+        lines = text.split('\n')
+        for line in lines:
+            line = line.strip()
+            if not line:
+                continue
 
-                # Check for Twitter Post start
-                if re.match(r".*Twitter Post.*:", line, re.IGNORECASE):
-                    twitter_post_start = True
-                    twitter_post_content.append(line.split(":", 1)[1].strip())
-                    continue
-                
-                if twitter_post_start:
-                    if line.strip() == "" and twitter_post_content:
-                        twitter_post_start = False
-                    else:
-                        twitter_post_content.append(line.strip())
+            matched = False
+            for pattern in section_patterns:
+                match = pattern.match(line)
+                if match:
+                    key = match.group(1).strip()
+                    value = match.group(2).strip()
+                    sections[key] = value
+                    if key.lower() in map(str.lower, self.target_keys['twitter_post']):
+                        twitter_post_start = True
+                    matched = True
+                    break
 
-        sections = {key: value.strip() for key, value in sections.items()}
+            if not matched and twitter_post_start:
+                twitter_post_content.append(line)
 
         if twitter_post_content:
             sections["Twitter Post"] = " ".join(twitter_post_content).strip('"').strip()
 
-        return sections
+        return {key: value.strip() for key, value in sections.items()}
 
     def find_closest_value(self, sections: dict, target_keys: list) -> str:
         for key in target_keys:

@@ -2,18 +2,11 @@ import json
 import logging
 from llm import CustomLLM
 from output_parser import CustomOutputParser
+from pathlib import Path
 
 def load_persona_prompts(json_file):
     with open(json_file, 'r') as file:
         return json.load(file)
-
-
-def generate_article_prompt(question, examples, article):
-    #TODO: show the article about a selected topic to the llm, show it its previous responses and ask to respond again after having read the article
-    #TODO: check if the article is relevant to the question
-    #TODO: for personas which gave a low sentiment, show them a positive article and ask them to respond again and vice versa
-    #TODO: find a way to integrate the Agreement in the selection of the article to show...
-    pass
 
 def generate_question_prompt(question, examples):
     prompt = f"""
@@ -36,7 +29,7 @@ For the following question, provide:
    - 1: Strongly disagree
    - 2: Disagree
    - 3: Neutral (No strong feelings either way, or not applicable)
-   - 4: Agqree
+   - 4: Agree
    - 5: Strongly agree
 
 3. Your opinion about the given topic as a Twitter post of maximum 260 characters. Make sure the Twitter post:
@@ -69,18 +62,22 @@ Question:
 """
     return prompt
 
-def load_processed_ids(output_file):
+def load_processed_pairs(output_file):
     try:
         with open(output_file, 'r') as file:
             data = json.load(file)
-            return {entry['user_id'] for entry in data}
+            return {(entry['user_id'], entry['question']) for entry in data}
     except FileNotFoundError:
         return set()
 
 def save_responses(output_file, responses):
-    with open(output_file, 'a') as outfile:
+    if Path(output_file).exists() and Path(output_file).stat().st_size > 0:
+        with open(output_file, 'r') as file:
+            existing_data = json.load(file)
+            responses = existing_data + responses
+
+    with open(output_file, 'w') as outfile:
         json.dump(responses, outfile, indent=4)
-        outfile.write('\n')
 
 def main():
     # Load persona prompts
@@ -143,22 +140,20 @@ def main():
     ]
 
     output_file = '../data/processed/before_responses.json'
-    processed_ids = load_processed_ids(output_file)
+    processed_pairs = load_processed_pairs(output_file)
 
     all_responses = []
     checkpoint_counter = 0
 
-    # Iterate through persona prompts and a subset of questions
+    # Iterate through persona prompts and all questions
     for persona in persona_prompts:
         persona_prompt = persona["persona_prompt"]
         user_id = persona["user_id"]
 
-        if user_id in processed_ids:
-            continue
-
-        user_responses = []
-
         for question in questions:
+            if (user_id, question) in processed_pairs:
+                continue
+
             question_prompt = generate_question_prompt(question, examples)
             response = llm.generate_response(persona_prompt, question_prompt)
             parsed_output = parser.parse(response)
@@ -167,23 +162,22 @@ def main():
             print(response)
             print("Parsed output:")
             print(parsed_output)
-            user_responses.append({
+            all_responses.append({
                 "user_id": user_id,
                 "question": question,
                 "response": parsed_output
             })
 
-        all_responses.extend(user_responses)
-        processed_ids.add(user_id)
-        checkpoint_counter += 1
+            processed_pairs.add((user_id, question))
+            checkpoint_counter += 1
 
-        # Checkpoint after every 5 different IDs
-        if checkpoint_counter % 5 == 0:
-            save_responses(output_file, all_responses[-5*len(questions):])
+            # Checkpoint after every 5 responses
+            if checkpoint_counter % (5 * len(questions)) == 0:
+                save_responses(output_file, all_responses[-(5 * len(questions)):])
 
-    # Save any remaining responses to a JSON file if nr can't be divided by 5
-    if checkpoint_counter % 5 != 0:
-        save_responses(output_file, all_responses[-(checkpoint_counter % 5)*len(questions):])
+    # Save any remaining responses to a JSON file
+    if checkpoint_counter % (5 * len(questions)) != 0:
+        save_responses(output_file, all_responses[-(checkpoint_counter % (5 * len(questions))):])
 
 if __name__ == '__main__':
     main()
