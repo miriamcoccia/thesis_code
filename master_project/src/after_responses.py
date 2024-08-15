@@ -101,11 +101,11 @@ def main():
     questions = list(question_to_topic.keys())
 
     after_responses_file = '../data/processed/after_responses.json'
-    processed_pairs = set()
+    processed_triplets = set()
     if Path(after_responses_file).exists() and Path(after_responses_file).stat().st_size > 0:
         with open(after_responses_file, 'r') as file:
             data = json.load(file)
-            processed_pairs = {(entry['user_id'], entry['question']) for entry in data}
+            processed_triplets = {(entry['user_id'], entry['question'], entry['article']['sentiment']) for entry in data}
 
     before_responses_dict = {(resp['user_id'], resp['question']): resp['response'] for resp in before_responses}
 
@@ -122,63 +122,66 @@ def main():
         logging.info(f"Processing user_id: {user_id}")
 
         for question in questions:
-            if (user_id, question) in processed_pairs:
-                logging.info(f"Skipping already processed pair (user_id, question): ({user_id}, {question})")
-                continue
-
             if (user_id, question) not in before_responses_dict:
                 logging.warning(f"No previous response found for user_id: {user_id}, question: {question}")
                 continue
 
             parsed_output = before_responses_dict[(user_id, question)]
-            relevance = int(parsed_output['relevance']) if parsed_output['relevance'] != 'N/A' else 0
-            sentiment = int(parsed_output['sentiment']) if parsed_output['sentiment'] != 'N/A' else 0
-            agreement = parsed_output.get('agreement', 'N/A')
-            try:
-                agreement_int = int(agreement) if isinstance(agreement, str) and agreement.isdigit() else agreement
-            except ValueError:
-                agreement_int = None
+            logging.info(f"Found previous response for user_id {user_id}, question '{question}': {parsed_output}")
 
             topic = question_to_topic.get(question)
             if not topic or topic not in articles_by_topic:
-                logging.warning(f"No relevant articles found for question: {question}")
+                logging.warning(f"No relevant articles found for question: {question}, skipping...")
                 continue
 
             articles = articles_by_topic[topic]
-            opposing_sentiment = "positive" if sentiment <= 2 else "negative"
-            relevant_articles = articles.get(opposing_sentiment, [])
+            logging.info(f"Found articles for topic '{topic}'")
 
-            for article in relevant_articles:
-                article_prompt = generate_article_prompt(question, article, parsed_output, persona_prompt, examples)
-                raw_response = llm.generate_response(persona_prompt, article_prompt)
-                logging.info(f"Raw response for user_id {user_id}, question '{question}': {raw_response}")
+            # Ensure processing of both positive and negative articles
+            sentiments = ["positive", "negative"]
+            for sentiment in sentiments:
+                if (user_id, question, sentiment) in processed_triplets:
+                    logging.info(f"Skipping already processed triplet (user_id, question, sentiment): ({user_id}, {question}, {sentiment})")
+                    continue
 
-                revised_parsed_output = parser.parse(raw_response)
-                all_responses.append({
-                    "user_id": user_id,
-                    "question": question,
-                    "article": {
-                        "title": article['title'],
-                        "date": article['date'],
-                        "url": article['url'],
-                        "body": article['body'][:300],
-                        "sentiment": article['sentiment']
-                    },
-                    "response": revised_parsed_output
-                })
+                relevant_articles = articles.get(sentiment, [])
 
-            processed_pairs.add((user_id, question))
-            checkpoint_counter += 1
+                if not relevant_articles:
+                    logging.warning(f"No articles found with {sentiment} sentiment for topic: {topic}")
+                    continue
 
-            if checkpoint_counter % 5 == 0:
-                save_responses(after_responses_file, all_responses[-5*len(questions):])
-                logging.info(f"Saved checkpoint for user_ids: {list(processed_pairs)[-5:]}")
+                for article in relevant_articles:
+                    article_prompt = generate_article_prompt(question, article, parsed_output, persona_prompt, examples)
+                    raw_response = llm.generate_response(persona_prompt, article_prompt)
+                    logging.info(f"Raw response for user_id {user_id}, question '{question}', sentiment '{sentiment}': {raw_response}")
+
+                    revised_parsed_output = parser.parse(raw_response)
+                    all_responses.append({
+                        "user_id": user_id,
+                        "question": question,
+                        "article": {
+                            "title": article['title'],
+                            "date": article['date'],
+                            "url": article['url'],
+                            "body": article['body'][:300],
+                            "sentiment": article['sentiment']
+                        },
+                        "response": revised_parsed_output
+                    })
+
+                processed_triplets.add((user_id, question, sentiment))
+                checkpoint_counter += 1
+
+                if checkpoint_counter % 5 == 0:
+                    save_responses(after_responses_file, all_responses[-5*len(questions):])
+                    logging.info(f"Saved checkpoint for user_ids: {list(processed_triplets)[-5:]}")
 
     if checkpoint_counter % 5 != 0:
         save_responses(after_responses_file, all_responses[-(checkpoint_counter % 5)*len(questions):])
-        logging.info(f"Saved final batch for user_ids: {list(processed_pairs)[-checkpoint_counter % 5:]}")
+        logging.info(f"Saved final batch for user_ids: {list(processed_triplets)[-checkpoint_counter % 5:]}")
 
-    logging.info(f"Total processed personas: {len(processed_pairs)} out of {total_personas}")
+    logging.info(f"Total processed triplets: {len(processed_triplets)} out of {total_personas * len(questions) * 2} possible triplets.")
+
 
 if __name__ == '__main__':
     main()
