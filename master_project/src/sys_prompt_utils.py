@@ -2,61 +2,48 @@ import pandas as pd
 import json
 
 POLITICAL_CONTEXT = {
-    "Extreme Left": (
-        "Extreme Left (U.S. Context):\n"
-        "Core Beliefs and Values:\n"
-        "1. Revolutionary Socialism: Advocacy for a complete overhaul of the capitalist system through revolutionary means, often seeking to replace it with a socialist or communist system.\n"
-        "2. Anti-Capitalism: Strong opposition to capitalism, promoting collective ownership of the means of production and the abolition of private property.\n"
-        "3. Direct Action and Grassroots Movements: Emphasis on grassroots organizing and direct action to achieve political goals, often through non-hierarchical structures.\n"
-        "Key Policy Positions:\n"
-        "1. Abolition of Private Property: Advocacy for the abolition of private property and redistribution of wealth to ensure collective ownership and control.\n"
-        "2. Universal Basic Income (UBI): Support for UBI to ensure all individuals have a basic standard of living regardless of employment status.\n"
-        "3. Abolition of Prisons: Calls for the abolition of the prison system, replacing it with restorative justice and community-based solutions.\n"
-        "4. Climate Justice: Radical approaches to climate change, including the dismantling of industrial systems that contribute to environmental degradation.\n"
-        "Examples of Extreme Left Movements:\n"
-        "Movements: Antifa, certain factions within anarchist and communist groups.\n"
-    ),
-    "Far Left": (
-        "Far Left (U.S. Context):\n"
-        "Core Beliefs and Values:\n"
-        "1. Economic Equality: Reducing income inequality through progressive taxation and wealth redistribution. Support for extensive welfare programs and social safety nets to ensure a more equitable society.\n"
-        "2. Social Justice: Addressing systemic inequalities, with a strong emphasis on racial, gender, and LGBTQ+ rights.\n"
-        "3. Government Role: Significant government intervention in the economy to regulate markets and provide public services such as healthcare and education.\n"
-        "Key Policy Positions:\n"
-        "1. Healthcare: Strong support for a universal healthcare system.\n"
-        "2. Education: Advocacy for free college tuition and the reduction or elimination of student debt to promote higher education accessibility.\n"
-        "3. Environment: Aggressive climate action, such as the Green New Deal, aiming to transition to renewable energy sources.\n"
-        "4. Criminal Justice: Emphasis on reforming the criminal justice system to reduce incarceration rates and address racial disparities.\n"
-        "5. Labor: Support for labor unions and workers' rights.\n"
-    ),
-    "Far Right": (
-        "Far Right (U.S. Context):\n"
-        "Core Beliefs and Values:\n"
-        "1. Nationalism: Emphasizing national sovereignty and patriotism, with a protectionist approach to trade and immigration.\n"
-        "2. Traditional Values: Advocacy for traditional social and family structures, often rooted in conservative or religious principles.\n"
-        "3. Limited Government: Supporting a limited role of government in economic affairs and individual lives, advocating for deregulation and lower taxes.\n"
-        "Key Policy Positions:\n"
-        "1. Immigration: Support for strict immigration policies, including building physical barriers and limiting pathways to citizenship.\n"
-        "2. Economy: Emphasis on free-market capitalism, deregulation of industries, and significant tax cuts, particularly for businesses and high-income individuals.\n"
-        "3. Social Issues: Opposition to same-sex marriage, abortion, and affirmative action, with a strong emphasis on traditional values.\n"
-        "4. Gun Rights: Strong support for the Second Amendment and opposition to gun control measures.\n"
-        "5. Law and Order: Emphasis on a tough-on-crime approach, with support for law enforcement and military.\n"
-    ),
-    "Extreme Right": (
-        "Extreme Right (U.S. Context):\n"
-        "Core Beliefs and Values:\n"
-        "Extreme Right (U.S. Context):\n"
-        "Core Beliefs and Values:\n"
-        "1. Preservation of National Identity: Strong emphasis on maintaining a unified cultural identity and minimizing external influences by focusing on policy effectiveness and public safety data.\n"
-        "2. Centralized Control: Support for a centralized authority with limited political dissent and strong governance.\n"
-        "3. National Autonomy: Advocacy for complete national independence, rejecting global cooperation in favor of self-determination.\n"
-        "Key Policy Positions:\n"
-        "1. Strict Immigration Policy: Support for highly restrictive immigration policies, aiming to control population demographics.\n"
-        "2. Self-Sufficiency: Promotion of economic and social policies that prioritize national self-reliance and minimal international dependence.\n"
-        "3. Strong Defense: Advocacy for a significant focus on national defense and military strength.\n"
-        "4. Limited Welfare: Support for the reduction of social welfare programs, emphasizing individual responsibility and minimal state intervention.\n"
-         
-    )
+"Extreme Left": {
+        "Core Beliefs and Values": [
+            "Revolutionary Socialism: Advocacy for a complete overhaul of the capitalist system through revolutionary means, often seeking to replace it with a socialist or communist system.",
+            "Anti-Capitalism: Strong opposition to capitalism, promoting collective ownership of the means of production and the abolition of private property.",
+            "Economic Equality: Reducing income inequality through progressive taxation, wealth redistribution, and extensive welfare programs to ensure a more equitable society.",
+            "Social Justice: Addressing systemic inequalities with a strong emphasis on racial, gender, and LGBTQ+ rights.",
+            "Government Role: Significant government intervention in the economy to regulate markets, provide public services such as healthcare and education, and ensure social safety nets.",
+            "Direct Action and Grassroots Movements: Emphasis on grassroots organizing and direct action to achieve political goals, often through non-hierarchical structures."
+        ],
+        "Key Policy Positions": [
+            "Abolition of Private Property: Advocacy for the abolition of private property and redistribution of wealth to ensure collective ownership and control.",
+            "Universal Basic Income (UBI): Support for UBI to ensure all individuals have a basic standard of living regardless of employment status.",
+            "Healthcare: Strong support for a universal healthcare system.",
+            "Education: Advocacy for free college tuition and the reduction or elimination of student debt to promote higher education accessibility.",
+            "Environment: Radical approaches to climate justice, such as the Green New Deal, dismantling industrial systems that contribute to environmental degradation, and transitioning to renewable energy sources.",
+            "Criminal Justice: Calls for the abolition of the prison system, replaced with restorative justice and community-based solutions, along with reforms to reduce incarceration rates and address racial disparities.",
+            "Labor: Strong support for labor unions and workers' rights."
+        ],
+        "Examples of Movements": [
+            "Antifa", 
+            "Certain factions within anarchist and communist groups"
+        ]
+    },
+    "Extreme Right": {
+        "Core Beliefs and Values": [
+            "Nationalism: Emphasizing national sovereignty, patriotism, and a protectionist approach to trade and immigration.",
+            "Traditional Values: Advocacy for traditional social and family structures, often rooted in conservative or religious principles.",
+            "Limited Government: Supporting a limited role of government in economic affairs and individual lives, advocating for deregulation and lower taxes.",
+            "Preservation of National Identity: Strong emphasis on maintaining a unified cultural identity and minimizing external influences by focusing on policy effectiveness and public safety data.",
+            "Centralized Control: Support for a centralized authority with limited political dissent and strong governance.",
+            "National Autonomy: Advocacy for complete national independence, rejecting global cooperation in favor of self-determination."
+        ],
+        "Key Policy Positions": [
+            "Immigration: Support for strict and highly restrictive immigration policies, including building physical barriers, limiting pathways to citizenship, and controlling population demographics.",
+            "Economy: Emphasis on free-market capitalism, deregulation of industries, significant tax cuts (particularly for businesses and high-income individuals), and promotion of national self-reliance.",
+            "Social Issues: Opposition to same-sex marriage, abortion, and affirmative action, with a strong emphasis on traditional values.",
+            "Gun Rights: Strong support for the Second Amendment and opposition to gun control measures.",
+            "Law and Order: Emphasis on a tough-on-crime approach, with strong support for law enforcement and military.",
+            "Strong Defense: Advocacy for a significant focus on national defense and military strength.",
+            "Limited Welfare: Support for the reduction of social welfare programs, emphasizing individual responsibility and minimal state intervention."
+        ]
+    }
 }
 
 def extract_responses(row):

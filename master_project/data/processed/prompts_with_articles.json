@@ -1,0 +1,310 @@
+[
+    {
+        "question": "I feel like I am treated fairly by politicians.",
+        "question_code": "F1A10_1",
+        "article": {
+            "source": "MSNBC",
+            "link": "https://www.msnbc.com/msnbc-podcast/why-is-this-happening/stakes-tax-policy-kimberly-clausing-podcast-transcript-rcna150066",
+            "date": "2024-04-30",
+            "text": "Chris Hayes: Donald Trump has said he wants more corporate tax cuts. When you step back and you look at tax policy through the years, that corporate tax cut was enormous. It\u2019s a huge amount of money and corporations are a difficult thing to conceptualize. Like, what does that mean? Who does it go to? Well, it goes to the shareholders. Well, who holds the shares?\n\nWell, teachers and pensioners. But, you know, okay, sure. But are they really seeing the benefit? Like, first of all, describe how big the cut was and what are the effects of it?\n\nKimberly Clausing: Yeah. So the cut was from 35 percent statutory rate to a 21 percent statutory rate. But one thing to bear in mind is that the biggest companies are really not paying at the statutory rate, in part because they\u2019re operating throughout the world and they can easily arrange their financial affairs, so a lot of the income ends up offshore at a lower tax rate.\n\nBut if you look at sort of what it did to taxes received as a share of GDP, we were averaging about 2 percent of corporate taxes as a share of GDP and that fell to the neighborhood of 1 percent due to this agreement. And if you look at the typical rich country, they bring in more like 3 percent of the GDP in corporate taxes. Our corporations are some of the most successful ones in the world. If you look at any list of like the world\u2019s top corporations, the U.S. has a dominant place on these lists and it disproportionately so relative to the size of our economy. So it seems particularly odd for us to decide to collect so little corporate tax revenue.",
+            "bias": "left"
+        },
+        "options": {
+            "1": "Completely agree",
+            "2": "Agree",
+            "3": "Agree to some extent",
+            "4": "Neither agree nor disagree",
+            "5": "Disagree to some extent",
+            "6": "Disagree",
+            "7": "Completely disagree"
+        }
+    },
+    {
+        "question": "I feel like I am treated fairly by politicians.",
+        "question_code": "F1A10_1",
+        "article": {
+            "source": "Fox News",
+            "link": "https://www.foxnews.com/politics/congress-approves-final-tax-reform-bill-handing-trump-year-end-victory",
+            "date": "2017-12-20",
+            "text": "The House gave the final stamp of approval Wednesday to a sweeping tax reform package, handing President Trump his first major legislative victory and most Americans a tax cut starting next year.\n\nWith a 224-201 House vote, Congress sent the $1.5 trillion package to Trump\u2019s desk. The biggest rewrite of the federal tax code since the Reagan administration will usher in steep rate cuts for American companies, double the deduction millions of families claim on their annual returns, and make a host of other changes taking effect in a matter of weeks.\n\nDuring a celebration at the White House with lawmakers on Wednesday afternoon, Trump called it \u201cthe largest tax cut in the history of our country\u201d and singled out House Speaker Paul Ryan and Senate Majority Leader Mitch McConnell for praise.",
+            "bias": "right"
+        },
+        "options": {
+            "1": "Completely agree",
+            "2": "Agree",
+            "3": "Agree to some extent",
+            "4": "Neither agree nor disagree",
+            "5": "Disagree to some extent",
+            "6": "Disagree",
+            "7": "Completely disagree"
+        }
+    },
+    {
+        "question": "To what degree does this concern you: The fact that the US is getting more deeply involved in the war in Ukraine",
+        "question_code": "F2A6",
+        "article": {
+            "source": "MSNBC",
+            "link": "https://www.nbcnews.com/meet-the-press/meet-press-april-21-2024-n1309584",
+            "date": "2024-04-21",
+            "text": "KRISTEN WELKER:\n\nWell, President Zelenskyy, it is a historic morning. I want to get your reaction to this major news: the House approving $61 billion in aid to Ukraine. It's expected to pass through the Senate. But you have been asking for this aid for six months. In that time, you have run out of ammunition. You've suffered setbacks on the battlefield. Will you get this aid in time to make a difference?\n\nVOLODYMYR ZELENSKYY [TRANSLATED]:\n\nYeah, it's been so important. And we'd like to say thanks to Congress for the bipartisan support. And we'd like to say thanks to Speaker Johnson and President Biden. Indeed, it is so important, the support from the United States of America. Of course, we need the support of the American people because, of course, the political decisions depend on public opinion. And this aid will strengthen Ukraine and send the Kremlin a powerful signal that it will not be the second Afghanistan. The United States will stay with Ukraine, will protect the Ukrainians, and they will protect \u2013 they will protect democracy in the world. This is a show of leadership and strength of the United States. And I think, indeed, now we've reached this important moment. For half a year we've been waiting, and I would like to say thanks to all the team on my side and on the U.S. side, the team who did everything so that we would get this positive vote. And today, we definitely need this aid. And Kristen, we really need to get this to the final point. We need to get it approved by the Senate. And then we want to get things as fast as possible so that we get some tangible assistance for the soldiers on the front line as soon as possible, not in another six months, so that they will be able to move ahead.\n\nKRISTEN WELKER:\n\nYou know, you said this week, President Zelenskyy, that Ukraine would have \u201cno chance of winning\u201d without more U.S. support. And I guess the question is, can Ukraine now win this war? Or is the United States merely giving you enough aid to prolong this war?\n\nVOLODYMYR ZELENSKYY [TRANSLATED]:\n\nThank you. I think this support will really strengthen the armed forces of Ukraine. And we will have a chance for victory if Ukraine really gets the weapon systems which we need so much. We - thousands of soldiers need so much, and this aid should not be just spread into layers all over, but it has to end up in tangible weapon systems. Some really crucial weapon systems which are hard to get. The long-range artillery, and I really appreciate that it mentions ATACMs, long-range weapons. And it's important because we need long-range weapons to not lose people on the front line. Because we have \u2013 we have casualties because we cannot reach that far. Our weapons are not that long-range. So we need it, and air defense. This is crucial. These are the priorities now.\n\nKRISTEN WELKER:\n\nPresident Zelenskyy, as you know, this aid was held up for half a year because there is fierce opposition to sending war aid to Ukraine, particularly amongst some Republicans. How long should Americans be expected to fund the war in Ukraine?\n\nVOLODYMYR ZELENSKYY [TRANSLATED]:\n\nThe Americans are not funding the war in Ukraine. They are primarily protecting freedom and democracy all over Europe. And Ukraine is fighting, and Ukraine is sending its best sons and daughters to the front line, and this reduces the price for all Europe, for all NATO. It reduces the price for everyone, including the U.S. as the leaders in NATO. The U.S. army now does not have to fight protecting NATO countries. Ukrainians are doing that. And it's only the ammo that the civilized world is providing. And I think it's a good decision. That is why we do need to keep supporting. While Ukraine stands, there's no direct war between the U.S. or NATO and Russian aggression. So Ukraine is still fighting, and Ukraine is protecting all the others.",
+            "bias": "left"
+        },
+        "options": {
+            "1": "not concerned at all",
+            "2": "not very concerned",
+            "3": "moderately concerned",
+            "4": "quite concerned",
+            "5": "very concerned"
+        }
+    },
+    {
+        "question": "To what degree does this concern you: The fact that the US is getting more deeply involved in the war in Ukraine",
+        "question_code": "F2A6",
+        "article": {
+            "source": "Fox News",
+            "link": "https://www.foxnews.com/politics/house-passes-ukraine-aid-bill-gop-rebels-threaten-oust-johnson",
+            "date": "2024-04-20",
+            "text": "The House of Representatives has approved sending $60 billion to Ukraine for its defense against Russia\u2019s invasion, an issue that has roiled Speaker Mike Johnson\u2019s already perilously slim majority.\n\nThe aid package passed 311 to 112, with more Democrats voting in favor than Republicans \u2013 and just 101 Republicans voting for the bill while 112 voted nay.\n\nIn a dramatic moment toward the end of the vote, Democrats began passing around Ukrainian flags \u2014 in violation of House protocol, according to the lawmaker presiding over the vote, Rep. Marc Molinaro. The left side of the aisle exploded in cheers when the timer on the vote reached zero, earning admonishment from Molinaro, who told them the flag-waving was in violation of the rules and called it \"inappropriate,\" to which Democrats jeered.\n\nRep. Anna Paulina Luna, R-Fla., took to the microphones to chide, \"Put those d--n flags away,\" earning more verbal backlash from Democrats before the chamber was called to order for the next vote.\n\nDEMS SAVE JOHNSON'S $95B FOREIGN AID PLAN FROM GOP REBEL BLOCKADE\n\nHouse lawmakers are in session on a rare Saturday working to pass Johnson's $95 billion foreign aid plan, which also includes aid bills for Israel and the Indo-Pacific, as well as a bill with other national security measures. In a decisive victory for the Louisiana Republican, all four bills passed with overwhelming bipartisan support.\n\nThe close margins within the GOP alone show what a divisive topic Ukraine funding has become for the right. A growing number of fiscal conservatives have been skeptical about the U.S.\u2019s continued financial involvement with Ukraine, while others have raised questions about corruption within Kyiv\u2019s government.",
+            "bias": "right"
+        },
+        "options": {
+            "1": "not concerned at all",
+            "2": "not very concerned",
+            "3": "moderately concerned",
+            "4": "quite concerned",
+            "5": "very concerned"
+        }
+    },
+    {
+        "question": "To what degree does this concern you: The situation of Ukrainian refugees in the US",
+        "question_code": "F2A7",
+        "article": {
+            "source": "NBC",
+            "link": "https://www.nbcnews.com/politics/white-house/us-expected-announce-plans-welcome-100000-ukrainians-rcna21330?cid=sm_npd_ms_tw_ma",
+            "date": "2022-03-21",
+            "text": "The Biden administration plans to welcome up to 100,000 Ukrainians and others fleeing the country into the United States, a senior administration official said Thursday.\n\nThe administration will allow their entry through a range of pathways, including the U.S. Refugee Admissions Program, nonimmigrant and immigrant visas, and other means. There will also be a focus on welcoming Ukrainians who have family members in the U.S. Additional details are expected to be unveiled in the coming weeks.",
+            "bias": "left"
+        },
+        "options": {
+            "1": "not concerned at all",
+            "2": "not very concerned",
+            "3": "moderately concerned",
+            "4": "quite concerned",
+            "5": "very concerned"
+        }
+    },
+    {
+        "question": "To what degree does this concern you: The situation of Ukrainian refugees in the US",
+        "question_code": "F2A7",
+        "article": {
+            "source": "Fox News",
+            "link": "https://www.foxnews.com/world/us-immigration-officials-detain-more-than-5000-migrants-from-ukraine-in-march",
+            "date": "2022-04-19",
+            "text": "U.S. Customs and Border Protection detained more than 5,000 Ukrainians at U.S. land, sea and air borders in March, according to new data released Monday.",
+            "bias": "right"
+        },
+        "options": {
+            "1": "not concerned at all",
+            "2": "not very concerned",
+            "3": "moderately concerned",
+            "4": "quite concerned",
+            "5": "very concerned"
+        }
+    },
+    {
+        "question": "To what degree does this concern you: The state of the US healthcare system",
+        "question_code": "F2A9",
+        "article": {
+            "source": "MSNBC",
+            "link": "https://www.msnbc.com/msnbc-podcast/why-is-this-happening/year-healing-heartbreak-thomas-fisher-podcast-transcript-n1295142",
+            "date": "2022-05-04",
+            "text": "Thomas Fisher: So I want to be really careful because it's important to disentangle health status from health outcomes, right? So there is both the case that black folks at all socioeconomic status, when paired with white folks at all socioeconomic status have worse health status. They have higher burden of disease. They have worse birth outcomes, so low birth weight babies, prematurity, things of that nature. They have shorter lifespans. That's health status.\n\nThe flip side of it is what are the health outcomes? Once you go to a healthcare system, why do you get different care? And so much of that has to do with both interpersonal discrimination, right? So there's a lot of implicit racial discrimination studies that demonstrate that providers give differential care and misinterprets experiences when relayed to them because of the racial lens. But probably the bigger toll is the system challenges, right? We have organized our healthcare system towards one that is yielding and generating profit, one way or another, right? It might be margin as opposed to profit or surplus depending on if you're a nonprofit.",
+            "bias": "left"
+        },
+        "options": {
+            "1": "not concerned at all",
+            "2": "not very concerned",
+            "3": "moderately concerned",
+            "4": "quite concerned",
+            "5": "very concerned"
+        }
+    },
+    {
+        "question": "To what degree does this concern you: The state of the US healthcare system",
+        "question_code": "F2A9",
+        "article": {
+            "source": "Fox News",
+            "link": "https://www.foxnews.com/politics/top-republicans-roll-out-bill-bar-va-healthcare-systems-used-illegal-migrants",
+            "date": "2023-12-13",
+            "text": "Top Republicans in the House and Senate introduced legislation Wednesday to prevent Department of Veteran Affairs (VA) healthcare resources from being used for illegal migrants.\n\nSen. Tommy Tuberville, R-Ala., member of the Senate Armed Services Committee and Rep. Mike Bost, R-Il., chair of the House Veterans Affairs Committee, rolled out the legislation \u2014 known as the No VA Resources for Illegal Aliens Act \u2014 after Fox News Digital reported on complaints that the Biden administration VA is providing healthcare administrative services to illegal immigrants, potentially exacerbating long wait times for American veterans.",
+            "bias": "right"
+        },
+        "options": {
+            "1": "not concerned at all",
+            "2": "not very concerned",
+            "3": "moderately concerned",
+            "4": "quite concerned",
+            "5": "very concerned"
+        }
+    },
+    {
+        "question": "Agree or disagree: In the US, you can express your opinion publicly without fear of hostility",
+        "question_code": "F3A3_1",
+        "article": {
+            "source": "MSNBC",
+            "link": "https://www.msnbc.com/opinion/msnbc-opinion/elon-musks-pronoun-tweet-marks-dangerous-turn-rcna61324",
+            "date": "2022-12-13",
+            "text": "In a mere five words, Elon Musk, emerging darling of right-wing extremism and CEO of Twitter, managed to contain two hallmarks of the fascistic state when he tweeted Sunday: \u201cMy pronouns are Prosecute/Fauci.\u201d\n\nThe main offenses: criminalizing lifelong public servants whose political views deviate from those in power and scapegoating minority communities. The fact that over 1 million people liked his tweet \u2014 and that Musk has 121 million followers \u2014 is only part of why it should be taken so seriously.",
+            "bias": "left"
+        },
+        "options": {
+            "1": "Completely agree",
+            "2": "Agree",
+            "3": "Agree to some extent",
+            "4": "Neither agree nor disagree",
+            "5": "Disagree to some extent",
+            "6": "Disagree",
+            "7": "Completely disagree"
+        }
+    },
+    {
+        "question": "Agree or disagree: In the US, you can express your opinion publicly without fear of hostility",
+        "question_code": "F3A3_1",
+        "article": {
+            "source": "Fox News",
+            "link": "https://www.foxnews.com/politics/dems-violated-freedom-speech-during-transgender-bills-debate-conservative-groups-allege",
+            "date": "2024-04-08",
+            "text": "The mandatory use of preferred pronouns is at the center of a battle between progressives in the Colorado House and Senate and conservative groups suing the liberal lawmakers, claiming the compulsory speech violates their First Amendment rights.",
+            "bias": "right"
+        },
+        "options": {
+            "1": "Completely agree",
+            "2": "Agree",
+            "3": "Agree to some extent",
+            "4": "Neither agree nor disagree",
+            "5": "Disagree to some extent",
+            "6": "Disagree",
+            "7": "Completely disagree"
+        }
+    },
+    {
+        "question": "Agree or disagree: We no longer have room in the US for refugees from countries other than Ukraine",
+        "question_code": "F3A6_1",
+        "article": {
+            "source": "MSNBC",
+            "link": "https://www.nbcnews.com/politics/immigration/afghans-subject-stricter-rules-ukrainian-refugees-advocates-say-thousa-rcna26513",
+            "date": "2022-04-22",
+            "text": "Afghans trying to enter the U.S. to escape Taliban rule are subject to stricter requirements than Ukrainians trying to flee the Russian invasion of their country, and thousands of Afghans \u2014 even some threatened by the Taliban \u2014 have been rejected, refugee advocates say.",
+            "bias": "left"
+        },
+        "options": {
+            "1": "Completely agree",
+            "2": "Agree",
+            "3": "Agree to some extent",
+            "4": "Neither agree nor disagree",
+            "5": "Disagree to some extent",
+            "6": "Disagree",
+            "7": "Completely disagree"
+        }
+    },
+    {
+        "question": "Agree or disagree: We no longer have room in the US for refugees from countries other than Ukraine",
+        "question_code": "F3A6_1",
+        "article": {
+            "source": "Fox News",
+            "link": "https://www.foxnews.com/opinion/social-media-mental-health-effects",
+            "date": "2024-05-04",
+            "text": "CBS' Gayle King, co-host of 'CBS Mornings,' compared how countries are treating Ukrainian refugees fleeing their country and the threat of Russian President Vladimir Putin to the treatment of migrants at the U.S. border.",
+            "bias": "right"
+        },
+        "options": {
+            "1": "Completely agree",
+            "2": "Agree",
+            "3": "Agree to some extent",
+            "4": "Neither agree nor disagree",
+            "5": "Disagree to some extent",
+            "6": "Disagree",
+            "7": "Completely disagree"
+        }
+    },
+    {
+        "question": "Agree or disagree: Foreigners exacerbate crime problems",
+        "question_code": "F3A7_1",
+        "article": {
+            "source": "NBC",
+            "link": "https://www.nbcnews.com/politics/2024-election/trumps-claims-migrant-crime-wave-are-not-supported-national-data-rcna140896",
+            "date": "2024-02-29",
+            "text": "An NBC News review of available 2024 crime data from the cities targeted by Texas\u2019 \u201cOperation Lone Star,\u201d which buses or flies migrants from the border to major cities in the interior \u2014 shows overall crime levels dropping in those cities that have received the most migrants.\n\nOverall crime is down year over year in Philadelphia, Chicago, Denver, New York and Los Angeles. Crime has risen in Washington, D.C., but local officials do not attribute the spike to migrants.\n\n\u201cThis is a public perception problem. It\u2019s always based upon these kinds of flashpoint events where an immigrant commits a crime,\u201d explains Graham Ousey, a professor at the College of William & Mary and the co-author of \u201cImmigration and Crime: Taking Stock.\u201d \u201cThere\u2019s no evidence for there being any relationship between somebody\u2019s immigrant status and their involvement in crime.\u201d\n\nOusey notes the emotional toll these incidents have taken and how they can inform public perception, saying, \u201cThey can be really egregious acts of criminality that really draw lots of attention that involve somebody who happens to be an immigrant. And if you have leaders, political leaders who are really pushing that narrative, I think that would have the tendency to sort of push up the myth.\u201d\n\nRecommended \u201cAt least a couple of recent studies show that undocumented immigrants are also not more likely to be involved in crime,\u201d Ousey says \u2014 in part because of caution about their immigration status. \u201cThe individual-level studies actually show that they\u2019re less involved than native-born citizens or second-generation immigrants.\u201d\n\nAnother misconception often cited by critics is that crime is more prevalent in \u201csanctuary cities.\u201d But a Department of Justice report found that \u201cthere was no evidence that the percentage of unauthorized or authorized immigrant population at the city level impacted shifts in the homicide rates and no evidence that immigration is connected to robbery at the city level.\u201d\n\nTrump\u2019s campaign claims without evidence that those statistics obscure the problem.\n\n\u201cDemocrat cities purposefully do not document when crimes are committed by illegal immigrants, because they don\u2019t want American citizens to know the truth about the dangerous impact Joe Biden\u2019s open border is having on their communities,\u201d Karoline Leavitt, Trump campaign press secretary, said in a statement. \u201cNevertheless, Americans know migrant crime is a serious and growing threat; and the murder, rape, or abuse of one innocent citizen at the hands of an illegal immigrant is one too many.\u201d\n\nTrump has been pushing the argument that immigrants bring crime since launching his first campaign in 2015, often featuring at his rallies the family members of those who were killed by undocumented immigrants who had been drinking and driving. And his arguments are not new \u2014 opponents of immigration have long tried to make the case that migrants bring crime.\n\nNational crime data, especially pertaining to undocumented immigrants, is notoriously incomplete. The national data comes in piecemeal and can only be evaluated holistically when the annual data is released.\n\nThe data is incomplete on how many crimes each year are committed by migrants, primarily because most local police don\u2019t record immigration status when they make arrests. But the studies that have been done on this, most recently by the University of Wisconsin-Madison, show that in Texas, where police do record immigration status, migrants commit fewer crimes per capita.",
+            "bias": "left"
+        },
+        "options": {
+            "1": "Completely agree",
+            "2": "Agree",
+            "3": "Agree to some extent",
+            "4": "Neither agree nor disagree",
+            "5": "Disagree to some extent",
+            "6": "Disagree",
+            "7": "Completely disagree"
+        }
+    },
+    {
+        "question": "Agree or disagree: Foreigners exacerbate crime problems",
+        "question_code": "F3A7_1",
+        "article": {
+            "source": "Fox News",
+            "link": "https://www.foxnews.com/politics/illegal-immigrants-make-up-75-arrests-midtown-manhattan-say-police-report",
+            "date": "2024-09-04",
+            "text": "Migrants are flooding the criminal justice system in New York City at higher rates than previously acknowledged, making up over half of arrests in multiple areas of the city.\n\nAs many as 75% of people arrested in Midtown Manhattan in recent months for crimes such as assault, robbery and domestic violence have been migrants, police sources said in a report for the New York Post.\n\nAccording to the report, New York City courtrooms are packed with people who are in the city seeking asylum but have run afoul of the law, with police sources saying that lax bail guidelines mean migrants are quickly back on the streets of the city after being arrested.\n\n\"I would say about 75% of the arrests in Midtown Manhattan are migrants, mostly for robberies, assaults, domestic incidents and selling counterfeit items,\" a Midtown Manhattan police officer told the New York Post, noting that you can\u2019t be 100% sure [they\u2019re migrants] unless you arrest them in a shelter or they\u2019re dumb enough to give you a shelter address. The true scope of the problem is likely unknown, in large part because the police are not allowed to track the immigration status of people they detain.\n\n\"Police officers are prohibited from asking about the immigration status of crime victims, witnesses, or suspects and therefore the NYPD doesn\u2019t track data pertaining to immigration statuses,\" an NYPD spokesperson told Fox News Digital.\n\nThe problem is not just limited to Manhattan, with police sources telling the New York Post that more than 60% of arrests in Queens have also been migrants.\n\n\"There are days we have so many migrant cases, we have to call in for extra Spanish interpreters,\" a law enforcement officer at the Queens Criminal Courthouse told the New York Post.\n\nIn one case highlighted by the report, 31-year-old Ecuadorian migrant Jefferson Maldenado has been arrested in New York City five times since arriving in the U.S. earlier this year. His latest arrest was for stealing a pair of pants and a beer from a Target store, the report noted.",
+            "bias": "right"
+        },
+        "options": {
+            "1": "Completely agree",
+            "2": "Agree",
+            "3": "Agree to some extent",
+            "4": "Neither agree nor disagree",
+            "5": "Disagree to some extent",
+            "6": "Disagree",
+            "7": "Completely disagree"
+        }
+    },
+    {
+        "question": "Agree or disagree: Foreigners are taking jobs away from Americans",
+        "question_code": "F3A8_1",
+        "article": {
+            "source": "MSNBC",
+            "link": "https://www.msnbc.com/opinion/msnbc-opinion/trump-immigration-lies-hide-americas-real-immigration-problem-rcna152421",
+            "date": "2024-05-16",
+            "text": "As a percentage of its population, American immigration numbers lag behind competitor nations, like my home country of Canada, which have long understood the benefits of strong immigration and have taken great pains to make themselves attractive destinations for immigrants (as Canada did for my parents, who emigrated from Kenya). We want \u2014 we need \u2014 our working-age population to grow; more labor means a better, stronger economy. In the face of an imminent drop in those numbers as the baby boom generation retires, immigrants are more critical than ever. Immigrants will fill in this worker gap.\n\nPrioritizing immigration will keep our population from stagnating and possibly shrinking. More than three-quarters of immigrants in the U.S., according to Pew Research, live and work in this country as a result of following normal immigration channels. Given new U.S. Census Bureau data, Brookings estimates that high immigration will allow us to counter an aging populace and help build our working-age population.\n\nWith each slip of the tongue when referring to undocumented migrants as \u201cillegals,\u201d we are not simply perpetuating a myth among Americans but, perhaps more dangerously, we are solidifying a reputation as a country that is unwelcoming to the very migrants we so desperately need.\n\nImmigrants also help to alleviate critical worker shortages in a wide range of American industries, filling in the gaps by doing jobs that native-born workers either don\u2019t want to do, or aren\u2019t educated to do. Foreign-born workers comprise 22% of all workers in the U.S. food supply chain, 38% of home health aides, 29% of doctors, 23% of pharmacists and 15.2% of nurses. In STEM fields, more than one-fifth of workers are foreign born, and foreign-born migrants are responsible for more than 75% of patents from the top 10 patent-producing U.S. universities. Those patents lead to startups. Those startups lead to jobs. The workers in those jobs pay taxes and consume, and often launch startups of their own.\n\nThe data is clear. In the words of Alexander Hamilton \u2014 (or at least the version of him written into the eponymous play by Lin Manuel Miranda), \u2014 immigrants get the job done.\n\nWith each passing day, each slip of the tongue when referring to undocumented migrants as \u201cillegals,\u201d we are not simply perpetuating a myth among Americans but, perhaps more dangerously, we are solidifying a reputation as a country that is unwelcoming to the very migrants we so desperately need. In doing so, we are putting our future in peril.",
+            "bias": "left"
+        },
+        "options": {
+            "1": "Completely agree",
+            "2": "Agree",
+            "3": "Agree to some extent",
+            "4": "Neither agree nor disagree",
+            "5": "Disagree to some extent",
+            "6": "Disagree",
+            "7": "Completely disagree"
+        }
+    },
+    {
+        "question": "Agree or disagree: Foreigners are taking jobs away from Americans",
+        "question_code": "F3A8_1",
+        "article": {
+            "source": "Fox News",
+            "link": "https://www.foxnews.com/media/tyson-hiring-migrants-laying-off-us-workers-decimation-american-dream-top-republican",
+            "date": "2024-03-17",
+            "text": "As Tyson Foods announced it is shuttering an Iowa pork factory that will lead to more than 1,000 lost jobs, the company reportedly met with and hired migrants in Manhattan for positions at a Tennessee plant.\n\nAfter announcing it will join with the Tent Partnership for Refugees, staff from the poultry heavyweight engaged with asylum seekers at the New York office of Chobani yogurt, whose CEO Hamdi Ulukaya founded the charity.\n\nAt least 87 migrants from Central and South America were hired in two separate groups, according to Tribune News Service. The same report said Tyson employs about 42,000 immigrants and that the company's corporate social responsibility executive said, \"We would like to employ another 42,000 if we could find them.\"\n\nIn response to the news, Sen. J.D. Vance, R-Ohio, said companies who lay off Americans while seeking foreign nationals for open positions should face congressional scrutiny. \"We're certainly going to look into whether we can change that [ability], assuming Tyson is operating legally,\" Vance told \"Jesse Watters Primetime\" on Thursday.\n\n\"All we know is that they are firing American workers and hiring illegal aliens to replace them. This is the entire point of illegal immigration \u2014 and Republicans, we've got to hammer this point home.\"\n\nVance argued the hiring of migrants or foreign nationals who are willing to work for lower pay than U.S. citizens both exacerbates the labor pool and suppresses wages for working-class families.",
+            "bias": "right"
+        },
+        "options": {
+            "1": "Completely agree",
+            "2": "Agree",
+            "3": "Agree to some extent",
+            "4": "Neither agree nor disagree",
+            "5": "Disagree to some extent",
+            "6": "Disagree",
+            "7": "Completely disagree"
+        }
+    }
+]

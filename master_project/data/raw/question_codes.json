@@ -1,0 +1,174 @@
+[
+    {
+        "code": "F1A9_1",
+        "question": "I feel very angry when I think about the current situation.",
+        "options": {
+            "1": "Completely agree",
+            "2": "Agree",
+            "3": "Agree to some extent",
+            "4": "Neither agree nor disagree",
+            "5": "Disagree to some extent",
+            "6": "Disagree",
+            "7": "Completely disagree"
+        }
+    },
+    {
+        "code": "F1A10_1",
+        "question": "I feel like I am treated fairly by politicians.",
+        "options": {
+            "1": "Completely agree",
+            "2": "Agree",
+            "3": "Agree to some extent",
+            "4": "Neither agree nor disagree",
+            "5": "Disagree to some extent",
+            "6": "Disagree",
+            "7": "Completely disagree"
+        }
+    },
+    {
+        "code": "F1A13_1",
+        "question": "The energy crisis is worsening my situation.",
+        "options": {
+            "1": "Completely agree",
+            "2": "Agree",
+            "3": "Agree to some extent",
+            "4": "Neither agree nor disagree",
+            "5": "Disagree to some extent",
+            "6": "Disagree",
+            "7": "Completely disagree"
+        }
+    },
+    {
+        "code": "F1A16_1",
+        "question": "I feel like our political leaders don't give me enough information.",
+        "options": {
+            "1": "Completely agree",
+            "2": "Agree",
+            "3": "Agree to some extent",
+            "4": "Neither agree nor disagree",
+            "5": "Disagree to some extent",
+            "6": "Disagree",
+            "7": "Completely disagree"
+        }
+    },
+    {
+        "code": "F2A6",
+        "question": "To what degree does this concern you: The fact that the US is getting more deeply involved in the war in Ukraine",
+        "options": {
+            "1": "not concerned at all",
+            "2": "not very concerned",
+            "3": "moderately concerned",
+            "4": "quite concerned",
+            "5": "very concerned"
+        }
+    },
+    {
+        "code": "F2A7",
+        "question": "To what degree does this concern you: The situation of Ukrainian refugees in the US",
+        "options": {
+            "1": "not concerned at all",
+            "2": "not very concerned",
+            "3": "moderately concerned",
+            "4": "quite concerned",
+            "5": "very concerned"
+        }
+    },
+    {
+        "code": "F2A8",
+        "question": "To what degree does this concern you: The situation of non-Ukrainian refugees in the US",
+        "options": {
+            "1": "not concerned at all",
+            "2": "not very concerned",
+            "3": "moderately concerned",
+            "4": "quite concerned",
+            "5": "very concerned"
+        }
+    },
+    {
+        "code": "F2A14",
+        "question": "To what degree does this concern you: Russia using nuclear weapons",
+        "options": {
+            "1": "not concerned at all",
+            "2": "not very concerned",
+            "3": "moderately concerned",
+            "4": "quite concerned",
+            "5": "very concerned"
+        }
+    },
+    {
+        "code": "F2A9",
+        "question": "To what degree does this concern you: The state of the US healthcare system",
+        "options": {
+            "1": "not concerned at all",
+            "2": "not very concerned",
+            "3": "moderately concerned",
+            "4": "quite concerned",
+            "5": "very concerned"
+        }
+    },
+    {
+        "code": "F3A3_1",
+        "question": "Agree or disagree: In the US, you can express your opinion publicly without fear of hostility",
+        "options": {
+            "1": "Completely agree",
+            "2": "Agree",
+            "3": "Agree to some extent",
+            "4": "Neither agree nor disagree",
+            "5": "Disagree to some extent",
+            "6": "Disagree",
+            "7": "Completely disagree"
+        }
+    },
+    {
+        "code": "F3A5_1",
+        "question": "Agree or disagree: We can continue to accept refugees from Ukraine in the US",
+        "options": {
+            "1": "Completely agree",
+            "2": "Agree",
+            "3": "Agree to some extent",
+            "4": "Neither agree nor disagree",
+            "5": "Disagree to some extent",
+            "6": "Disagree",
+            "7": "Completely disagree"
+        }
+    },
+    {
+        "code": "F3A6_1",
+        "question": "Agree or disagree: We no longer have room in the US for refugees from countries other than Ukraine",
+        "options": {
+            "1": "Completely agree",
+            "2": "Agree",
+            "3": "Agree to some extent",
+            "4": "Neither agree nor disagree",
+            "5": "Disagree to some extent",
+            "6": "Disagree",
+            "7": "Completely disagree"
+        }
+    },
+    {
+        "code": "F3A7_1",
+        "question": "Agree or disagree: Foreigners exacerbate crime problems",
+        "options": {
+            "1": "Completely agree",
+            "2": "Agree",
+            "3": "Agree to some extent",
+            "4": "Neither agree nor disagree",
+            "5": "Disagree to some extent",
+            "6": "Disagree",
+            "7": "Completely disagree"
+        }
+    },
+    {
+        "code": "F3A8_1",
+        "question": "Agree or disagree: Foreigners are taking jobs away from Americans",
+        "options": {
+            "1": "Completely agree",
+            "2": "Agree",
+            "3": "Agree to some extent",
+            "4": "Neither agree nor disagree",
+            "5": "Disagree to some extent",
+            "6": "Disagree",
+            "7": "Completely disagree"
+        }
+    }
+]
