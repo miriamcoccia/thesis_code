@@ -1,0 +1,8 @@
+,LLM,Average Response,Most Frequent
+Exact Match,24.68%,0.0%,7.48%
+1 step,26.6%,0.0%,24.04%
+2 steps,20.94%,0.0%,18.38%
+3 steps,14.85%,0.0%,46.69%
+4 steps,6.52%,0.0%,0.43%
+5 steps,4.59%,nan%,1.71%
+6 steps,1.82%,nan%,1.28%
